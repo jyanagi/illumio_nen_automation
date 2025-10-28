@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # Populate network endpoints from CSV
+#
 # Steps:
 # 1. Validate or create workloads (IPv4/IPv6)
 # 2. Retrieve existing switch network_device href
@@ -85,10 +86,6 @@ EOF
       -u "${ilo_api}:${ilo_secret}" | jq -r \
       --arg w "$workload" --arg v4 "$ipv4" --arg v6 "$ipv6" '
       .[] | select(.hostname == $w or (.interfaces[].address == $v4 or .interfaces[].address == $v6)) | .href' | head -n1)
-#    href=$(curl -sk -X GET "https://${pce_url}/api/v2/orgs/${org_id}/workloads" \
-#      -u "${ilo_api}:${ilo_secret}" | jq -r \
-#      --arg w "$workload" --arg v4 "$ipv4" --arg v6 "$ipv6" \
-#      '.[] | select(.hostname == $w and (.interfaces[].address == $v4 or .interfaces[].address == $v6)) | .href' | head -n1)
   fi
 
   echo "$href"
