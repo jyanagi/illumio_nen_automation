@@ -1,0 +1,10 @@
+name,description,manufacturer,model,ip_address
+API_CISCO_SW_01,Example Cisco Switch via API,Cisco,IOS-XR,172.31.255.1
+API_CISCO_SW_02,Example Cisco Switch via API,Cisco,9000,172.31.255.2
+API_ARISTA_SW_01,Example Arista Switch via API,Arista,7000,172.31.255.3
+API_Generic_SW_01,Example Generic Switch via API,Generic,Workload IP Cidrs,172.31.255.4
+API_Generic_SW_02,Example Generic Switch via API,Generic,Workload IP Ranges,172.31.255.5
+API_Generic_SW_03,Example Generic Switch via API,Generic,Workload IP Ranges (JSON),172.31.255.6
+API_Generic_SW_04,Example Generic Switch via API,Generic,Workload IP Cidrs (JSON),172.31.255.7
+API_IBM_SW_01,Example IBM Switch via API,IBM,Precisely,172.31.255.8
+API_NVIDIA_SW_01,Example NVIDIA Switch via API,NVIDIA,OVS,172.31.255.9
