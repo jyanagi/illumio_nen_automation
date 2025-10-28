@@ -1,6 +1,6 @@
 # Illumio Network Automation Scripts
 
-These Bash scripts automate the creation of **Network Devices (Switches)** and **Network Endpoints (Switch Ports + Workloads)** within an **Illumio Policy Compute Engine (PCE)** environment using the Illumio REST API.
+These shell scripts automate the creation of **Network Devices (i.e., Switches)** and **Network Endpoints (Switch Ports + Workloads)** within an **Illumio Policy Compute Engine (PCE)** environment using Illumio REST API.
 
 ---
 
