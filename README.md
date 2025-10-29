@@ -17,7 +17,7 @@ Each script uses the Illumio REST API and `jq` for JSON parsing.
 ---
 ## 🧩 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-org-or-username>/illumio-nen-automation.git
+git clone https://github.com/jyanagi/illumio-nen-automation.git
 cd illumio-nen-automation
 ```
 ---
@@ -29,14 +29,14 @@ Update the .credentials file with your Illumio PCE connection details:
 ```bash
 # .credentials
 pce_url="your.pce.domain:8443"
-org_id="2"
+org_id="org #"
 ilo_api="api_username_or_key"
 ilo_secret="api_secret_or_token"
 ```
 
->⚠️ Important:\
->	•	Keep this file private. Do not commit it to version control.\
->	•	The scripts automatically source this file using source .credentials.
+>⚠️ Important:
+>	* Keep this file private. Do not commit it to version control.
+>	*	The scripts automatically source this file using source .credentials
 
 ---
 
@@ -45,6 +45,7 @@ ilo_secret="api_secret_or_token"
 network_switches.csv
 
 Define the switches you want to register in Illumio.
+
 Example:
 
 ```csv
@@ -56,6 +57,7 @@ API_CISCO_SW_02,Distribution switch,Cisco,9000,172.31.255.2
 network_endpoints.csv
 
 Define switch interfaces and workloads that should be linked as network endpoints.
+
 Example:
 
 ```csv
@@ -141,11 +143,11 @@ These scripts depend on:
 
 **RHEL / CentOS / Fedora**
 ```bash
-sudo dnf install jq -y
+sudo dnf install curl jq -y
 ```
 **Ubuntu / Debian**
 ```bash
-sudo apt install jq -y
+sudo apt install curl jq -y
 ```
 ---
 ## 🧩 Example Workflow Summary
@@ -171,8 +173,8 @@ chmod +x nen-switches.sh nen-endpoints.sh
 ---
 ## 🛡️ Notes
 Always verify your API credentials before execution.
-*Use test or staging PCEs before running in production.
-*The .credentials file is not meant to be committed to GitHub.
+* Use test or staging PCEs before running in production.
+* The .credentials file is not meant to be committed to GitHub.
 You may add it to .gitignore:
 ```bash
 echo ".credentials" >> .gitignore
