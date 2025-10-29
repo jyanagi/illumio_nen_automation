@@ -22,7 +22,7 @@ CYAN='\033[0;36m'
 RESET='\033[0m'
 # =================================
 
-# --- Helper Functions ---
+# --- Functions ---
 
 get_workload_href() {
   local workload="$1"
