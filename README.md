@@ -1,6 +1,6 @@
 # Illumio Network Automation Scripts
 
-These shell scripts automate the creation of **Network Devices (i.e., Switches)** and **Network Endpoints (Switch Ports + Workloads)** within an **Illumio Policy Compute Engine (PCE)** environment using Illumio REST API.
+These shell scripts automate the creation of **Network Devices (i.e., Switches)** and **Network Endpoints (Switch Ports + Workloads)** within an **Illumio Policy Compute Engine (PCE)** environment using Illumio REST API to support **Network Enforcement Node** deployments.
 
 ---
 
@@ -33,10 +33,6 @@ org_id="org #"
 ilo_api="api_username_or_key"
 ilo_secret="api_secret_or_token"
 ```
-
->⚠️ Important:
->	* Keep this file private. Do not commit it to version control.
->	*	The scripts automatically source this file using source .credentials
 
 ---
 
@@ -172,13 +168,11 @@ chmod +x nen-switches.sh nen-endpoints.sh
 ```
 ---
 ## 🛡️ Notes
+
 Always verify your API credentials before execution.
-* Use test or staging PCEs before running in production.
-* The .credentials file is not meant to be committed to GitHub.
-You may add it to .gitignore:
-```bash
-echo ".credentials" >> .gitignore
-```
+
+Use test or staging PCEs before running in production.
+
 ---
 ## 💡 Troubleshooting
 | Issue | Possible Cause | Solution |
