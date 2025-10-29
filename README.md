@@ -153,7 +153,7 @@ sudo apt install curl jq -y
 ## 🧩 Example Workflow Summary
 ```bash
 # Clone repository
-git clone https://github.com/<your-org-or-username>/illumio-nen-automation.git
+git clone https://github.com/jyanagi/illumio-nen-automation.git
 cd illumio-nen-automation
 
 # Configure credentials
