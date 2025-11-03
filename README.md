@@ -149,8 +149,8 @@ sudo apt install curl jq -y
 ## 🧩 Example Workflow Summary
 ```bash
 # Clone repository
-git clone https://github.com/jyanagi/illumio-nen-automation.git
-cd illumio-nen-automation
+git clone https://github.com/jyanagi/illumio_nen_automation.git
+cd illumio-nen_automation
 
 # Configure credentials
 nano .credentials
